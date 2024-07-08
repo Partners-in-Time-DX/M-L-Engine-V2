@@ -2,7 +2,7 @@ namespace Player.Overworld.Enums
 {
     public enum PlayerOverworldActions
     {
-        JUMP,
-        HAMMER
+        JUMP = 0,
+        HAMMER = 1
     }
 }
