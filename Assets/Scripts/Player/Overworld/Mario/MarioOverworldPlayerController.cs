@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MarioOverworldPlayerController : MonoBehaviour
+public class MarioOverworldPlayerController : CustomBillboard
 {
     //Actions
     private MarioOverworldActionFactory _actionFactory;
@@ -59,7 +59,6 @@ public class MarioOverworldPlayerController : MonoBehaviour
 
     private void CycleActions()
     {
-        Debug.Log($"Current Action Index: {_currentActionIndexValue}");
         if (_cycleActions.triggered)
         {
             _currentActionIndexValue += 1;
@@ -78,5 +77,10 @@ public class MarioOverworldPlayerController : MonoBehaviour
             _currentAction = _actionFactory.GetCurrentAction(_actionsArray[_currentActionIndexValue]);
             _actionsText.text = $"Current Action: {_actionsArray[_currentActionIndexValue].ToString()}";
         }
+    }
+
+    protected override void SetAnimation()
+    {
+        _currentState.AnimateState();
     }
 }
