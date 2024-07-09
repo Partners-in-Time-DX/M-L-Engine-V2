@@ -22,6 +22,7 @@ public class MarioOverworldPlayerController : MonoBehaviour
     //Controls
     private PlayerInput _input;
     private InputAction _cycleActions;
+    private InputAction _resetActions;
     
     //Text
     [SerializeField] private TextMeshProUGUI _actionsText;
@@ -33,6 +34,7 @@ public class MarioOverworldPlayerController : MonoBehaviour
         _input = GameObject.FindWithTag("ControllerManager").GetComponent<PlayerInput>();
         _input.SwitchCurrentActionMap("Player");
         _cycleActions = _input.actions["_cycleActions"];
+        _resetActions = _input.actions["_resetActions"];
         
         //Setup default action
         _actionFactory = new MarioOverworldActionFactory(this);
@@ -65,6 +67,13 @@ public class MarioOverworldPlayerController : MonoBehaviour
             {
                 _currentActionIndexValue = 0;
             }
+            
+            _currentAction = _actionFactory.GetCurrentAction(_actionsArray[_currentActionIndexValue]);
+            _actionsText.text = $"Current Action: {_actionsArray[_currentActionIndexValue].ToString()}";
+        }
+        else if (_resetActions.triggered)
+        {
+            _currentActionIndexValue = 0;
             
             _currentAction = _actionFactory.GetCurrentAction(_actionsArray[_currentActionIndexValue]);
             _actionsText.text = $"Current Action: {_actionsArray[_currentActionIndexValue].ToString()}";

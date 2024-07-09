@@ -94,6 +94,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "_resetActions",
+                    "type": "Button",
+                    "id": "4caa862f-2e26-474b-a7d0-d596ec69ff97",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -495,6 +504,17 @@
                 },
                 {
                     "name": "",
+                    "id": "8f120d5a-0678-4a3d-a2e1-3740ee9d6e8e",
+                    "path": "<Keyboard>/leftAlt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_cycleActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "20b7476c-7f4b-4259-af2d-44463189015d",
                     "path": "<XInputController>/rightShoulder",
                     "interactions": "",
@@ -528,12 +548,45 @@
                 },
                 {
                     "name": "",
-                    "id": "8f120d5a-0678-4a3d-a2e1-3740ee9d6e8e",
-                    "path": "<Keyboard>/leftAlt",
+                    "id": "b0a67470-dbeb-445d-a496-7b22338254fc",
+                    "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "_cycleActions",
+                    "action": "_resetActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aadbf65a-4a84-4307-a47e-2a830df9861e",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_resetActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b324415e-d7e8-4de6-a09a-20e2eb5a3526",
+                    "path": "<DualShockGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_resetActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a18d73cd-058d-4c3f-8277-caed95016a14",
+                    "path": "<XInputController>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_resetActions",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
