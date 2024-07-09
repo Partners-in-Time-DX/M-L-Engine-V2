@@ -17,7 +17,7 @@ public abstract class CustomBillboard : MonoBehaviour
         _spriteTransform = child.transform;
         _animator = child.GetComponent<Animator>();
         _sprite = child.GetComponent<SpriteRenderer>();
-        _cam = Camera.main.transform;
+        _cam = GameObject.FindWithTag("MainCamera").transform;
     }
 
     // Update is called once per frame

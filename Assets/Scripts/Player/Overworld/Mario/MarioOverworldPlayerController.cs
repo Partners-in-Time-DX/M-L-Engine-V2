@@ -27,9 +27,15 @@ public class MarioOverworldPlayerController : CustomBillboard
     //Text
     [SerializeField] private TextMeshProUGUI _actionsText;
     
+    //Sprite
+    [SerializeField] private GameObject _child;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Initialise Billboard
+        base.Init(_child);
+        
         //Setup Controller
         _input = GameObject.FindWithTag("ControllerManager").GetComponent<PlayerInput>();
         _input.SwitchCurrentActionMap("Player");
