@@ -452,7 +452,7 @@
                 {
                     "name": "",
                     "id": "144222a1-b39b-4739-9bee-9dec2ea50afc",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -495,17 +495,6 @@
                 },
                 {
                     "name": "",
-                    "id": "687d9841-cef6-450c-bd5f-7d4ec5bdbada",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "_cycleActions",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "20b7476c-7f4b-4259-af2d-44463189015d",
                     "path": "<XInputController>/rightShoulder",
                     "interactions": "",
@@ -530,6 +519,17 @@
                     "name": "",
                     "id": "8703bfa9-ce27-4ee2-9e60-34ff64da576d",
                     "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_cycleActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f120d5a-0678-4a3d-a2e1-3740ee9d6e8e",
+                    "path": "<Keyboard>/leftAlt",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
