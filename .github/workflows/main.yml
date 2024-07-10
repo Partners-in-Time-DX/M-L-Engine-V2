@@ -95,9 +95,9 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build
-          
+
   buildForWindows:
-    needs: buildForMac
+    needs: build
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: windows-2019
     strategy:
