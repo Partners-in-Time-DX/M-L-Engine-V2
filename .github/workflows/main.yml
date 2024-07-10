@@ -106,7 +106,6 @@ jobs:
         targetPlatform:
           - StandaloneWindows
           - StandaloneWindows64
-          - WSAPlayer
     steps:
       - uses: actions/checkout@v4
         with:
