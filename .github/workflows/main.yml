@@ -47,14 +47,14 @@ jobs:
     name: Run all tests ✨
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           lfs: true
       - uses: actions/cache@v3
         with:
           path: Library
           key: Library-test
-      - uses: game-ci/unity-test-runner@v2
+      - uses: game-ci/unity-test-runner@v4
         id: testRunner
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -76,47 +76,15 @@ jobs:
       matrix:
         targetPlatform:
           - StandaloneLinux64
-          - iOS
-          - Android
-          - WebGL
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           lfs: true
       - uses: actions/cache@v3
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
-      - uses: game-ci/unity-builder@v2
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        with:
-          targetPlatform: ${{ matrix.targetPlatform }}
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Build-${{ matrix.targetPlatform }}
-          path: build
-
-  buildForMac:
-    needs: build
-    name: Build for ${{ matrix.targetPlatform }}
-    runs-on: macos-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        targetPlatform:
-          - StandaloneOSX
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          lfs: true
-      - uses: actions/cache@v3
-        with:
-          path: Library
-          key: Library-${{ matrix.targetPlatform }}
-      - uses: game-ci/unity-builder@v2
+      - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
@@ -129,25 +97,24 @@ jobs:
           path: build
 
   buildForWindows:
-    needs: buildForMac
+    needs: build
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: windows-2019
+    runs-on: windows-2022
     strategy:
       fail-fast: false
       matrix:
         targetPlatform:
           - StandaloneWindows
           - StandaloneWindows64
-          - WSAPlayer
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           lfs: true
       - uses: actions/cache@v3
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
-      - uses: game-ci/unity-builder@v2
+      - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
