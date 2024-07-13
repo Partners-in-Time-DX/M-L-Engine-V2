@@ -21,8 +21,10 @@ public class MarioOverworldPlayerController : CustomBillboard
     
     //Controls
     private PlayerInput _input;
+    private InputAction _move;
     private InputAction _cycleActions;
     private InputAction _resetActions;
+    private Vector2 _cMoveVector;
     
     //Text
     [SerializeField] private TextMeshProUGUI _actionsText;
@@ -30,15 +32,25 @@ public class MarioOverworldPlayerController : CustomBillboard
     //Sprite
     [SerializeField] private GameObject _child;
     
+    //Getters and Setters
+    public Vector2 CharacterMove
+    { get { return _cMoveVector; } set { _cMoveVector = value; } }
+    public Animator MarioAnimator { get { return _animator; } set { _animator = value; } }
+    public string Facing { get { return _facing; } set { _facing = value; } }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
         //Initialise Billboard
-        base.Init(_child);
+        Init(_child);
+        
+        //Animator
+        _animator = _child.GetComponent<Animator>();
         
         //Setup Controller
         _input = GameObject.FindWithTag("ControllerManager").GetComponent<PlayerInput>();
         _input.SwitchCurrentActionMap("Player");
+        _move = _input.actions["Move"];
         _cycleActions = _input.actions["_cycleActions"];
         _resetActions = _input.actions["_resetActions"];
         
@@ -57,10 +69,21 @@ public class MarioOverworldPlayerController : CustomBillboard
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         CycleActions();
         _currentState.UpdateState();
+    }
+
+    private void FixedUpdate()
+    {
+        OnMove();
+    }
+    
+    private void OnMove()
+    {
+        Debug.Log("Input: " + _move.ReadValue<Vector2>());
+        _cMoveVector = _move.ReadValue<Vector2>();
     }
 
     private void CycleActions()

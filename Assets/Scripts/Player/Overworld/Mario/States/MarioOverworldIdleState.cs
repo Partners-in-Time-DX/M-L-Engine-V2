@@ -13,7 +13,7 @@ namespace Player.Overworld.Mario.States
 
         public override void UpdateState()
         {
-
+            TransitionToState();
         }
 
         public override void ExitState()
@@ -23,12 +23,15 @@ namespace Player.Overworld.Mario.States
 
         public override void TransitionToState()
         {
-
+            /*if (expr)
+            {
+                
+            }*/
         }
 
         public override void AnimateState()
         {
-
+            _ctx.MarioAnimator.CrossFade($"m_stand{_ctx.Facing}", 0.1f);
         }
     }
 }
