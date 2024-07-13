@@ -19,12 +19,18 @@ public class MarioOverworldPlayerController : CustomBillboard
     private MarioOverworldStateFactory _stateFactory;
     private MarioOverworldBaseState _currentState;
     
+    //Stats
+    [SerializeField] private int _moveSpeed = 5;
+    
     //Controls
     private PlayerInput _input;
     private InputAction _move;
     private InputAction _cycleActions;
     private InputAction _resetActions;
     private Vector2 _cMoveVector;
+    
+    //Character Controller
+    private CharacterController _controller;
     
     //Text
     [SerializeField] private TextMeshProUGUI _actionsText;
@@ -33,10 +39,14 @@ public class MarioOverworldPlayerController : CustomBillboard
     [SerializeField] private GameObject _child;
     
     //Getters and Setters
-    public Vector2 CharacterMove
-    { get { return _cMoveVector; } set { _cMoveVector = value; } }
+    public MarioOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
+    public Vector2 CharacterMove { get { return _cMoveVector; } set { _cMoveVector = value; } }
+    public float MoveAngle { get { return _moveAngle; } set { _moveAngle = value; } }
     public Animator MarioAnimator { get { return _animator; } set { _animator = value; } }
+    public CharacterController MarioController { get { return _controller; } set { _controller = value; } }
     public string Facing { get { return _facing; } set { _facing = value; } }
+    public Transform Cam { get { return _cam; } set { _cam = value; } }
+    public int MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -46,6 +56,9 @@ public class MarioOverworldPlayerController : CustomBillboard
         
         //Animator
         _animator = _child.GetComponent<Animator>();
+        
+        //Character Controller
+        _controller = GetComponent<CharacterController>();
         
         //Setup Controller
         _input = GameObject.FindWithTag("ControllerManager").GetComponent<PlayerInput>();
@@ -71,13 +84,10 @@ public class MarioOverworldPlayerController : CustomBillboard
     // Update is called once per frame
     private void Update()
     {
+        Debug.Log("Current State: " + _currentState.GetType());
+        OnMove();
         CycleActions();
         _currentState.UpdateState();
-    }
-
-    private void FixedUpdate()
-    {
-        OnMove();
     }
     
     private void OnMove()

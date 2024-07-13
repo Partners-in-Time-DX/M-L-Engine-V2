@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Player.Overworld.Mario.States
 {
     public class MarioOverworldIdleState : MarioOverworldBaseState
@@ -8,7 +10,7 @@ namespace Player.Overworld.Mario.States
 
         public override void EnterState()
         {
-
+            _ctx.transform.rotation = Quaternion.Euler(0f, _ctx.MoveAngle, 0f); // Sets rotation of object if it was modified in any other state
         }
 
         public override void UpdateState()
@@ -23,15 +25,15 @@ namespace Player.Overworld.Mario.States
 
         public override void TransitionToState()
         {
-            /*if (expr)
+            if (_ctx.CharacterMove.magnitude > 0.1f)
             {
-                
-            }*/
+                SwitchStates(_factory.Walking());
+            }
         }
 
         public override void AnimateState()
         {
-            _ctx.MarioAnimator.CrossFade($"m_stand{_ctx.Facing}", 0.1f);
+            _ctx.MarioAnimator.Play("m_stand" + _ctx.Facing);
         }
     }
 }

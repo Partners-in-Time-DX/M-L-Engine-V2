@@ -29,6 +29,7 @@ namespace Player.Overworld.Mario.States
                 {
                     ExitState();
                     newState.EnterState();
+                    _ctx.CurrentState = newState;
                 }
                 catch (InvalidMarioStateException e)
                 {

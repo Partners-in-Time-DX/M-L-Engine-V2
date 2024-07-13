@@ -14,11 +14,17 @@ namespace Player.Overworld.Mario.States
             _ctx = ctx;
 
             _states[PlayerOverworldStates.IDLE] = new MarioOverworldIdleState(_ctx, this);
+            _states[PlayerOverworldStates.WALKING] = new MarioOverworldWalkingState(_ctx, this);
         }
 
         public MarioOverworldBaseState Idle()
         {
             return _states[PlayerOverworldStates.IDLE];
+        }
+
+        public MarioOverworldBaseState Walking()
+        {
+            return _states[PlayerOverworldStates.WALKING];
         }
     }
 }
