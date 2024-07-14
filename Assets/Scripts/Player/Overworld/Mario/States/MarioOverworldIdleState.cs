@@ -15,6 +15,7 @@ namespace Player.Overworld.Mario.States
         {
             _ctx.transform.rotation = Quaternion.Euler(0f, _ctx.MoveAngle, 0f); // Sets rotation of object if it was modified in any other state
             _ctx.CharacterMove = Vector3.zero;
+            _ctx.Velocity = 0f; // Reset velocity to zero when transitioning from another state, else the player will fall too quickly
         }
 
         public override void UpdateState()

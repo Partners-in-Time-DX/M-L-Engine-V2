@@ -1,5 +1,6 @@
 using System;
 using ErrorHandling.Exceptions;
+using Player.Overworld.Mario.Helpers;
 using UnityEngine;
 
 namespace Player.Overworld.Mario.States
@@ -8,11 +9,13 @@ namespace Player.Overworld.Mario.States
     {
         protected MarioOverworldPlayerController _ctx;
         protected MarioOverworldStateFactory _factory;
+        protected MovementHelper _movementHelper;
 
         public MarioOverworldBaseState(MarioOverworldPlayerController ctx, MarioOverworldStateFactory factory)
         {
             _ctx = ctx;
             _factory = factory;
+            _movementHelper = new MovementHelper(_ctx);
         }
 
         public abstract void EnterState();
