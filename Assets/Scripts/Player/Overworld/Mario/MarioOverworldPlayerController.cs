@@ -19,8 +19,15 @@ public class MarioOverworldPlayerController : CustomBillboard
     private MarioOverworldStateFactory _stateFactory;
     private MarioOverworldBaseState _currentState;
     
-    //Stats
+    //Physics
     [SerializeField] private int _moveSpeed = 5;
+    private float _velocity;
+    private float _gravity;
+    private float _initialJumpVelocity;
+    private float _fallMultiplier = 2f;
+    private float _maxJumpHeight = 4f;
+    private float _maxJumpTime = 0.65f;
+    private bool _isGrounded;
     
     //Controls
     private PlayerInput _input;
@@ -46,7 +53,15 @@ public class MarioOverworldPlayerController : CustomBillboard
     public CharacterController MarioController { get { return _controller; } set { _controller = value; } }
     public string Facing { get { return _facing; } set { _facing = value; } }
     public Transform Cam { get { return _cam; } set { _cam = value; } }
+    
+    //Physics
     public int MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
+    public float Velocity { get { return _velocity; } set { _velocity = value; } }
+    public float Gravity { get { return _gravity; } set { _gravity = value; } }
+    public float FallMultiplier { get { return _fallMultiplier; } set { _fallMultiplier = value; } }
+    public float MaxJumpHeight { get { return _maxJumpHeight; } set { _maxJumpHeight = value; } }
+    public float MaxJumpTime { get { return _maxJumpTime; } set { _maxJumpTime = value; } }
+    public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -77,6 +92,9 @@ public class MarioOverworldPlayerController : CustomBillboard
         _currentState = _stateFactory.Idle(); // Default should be idle
         _currentState.EnterState();
         
+        // Jump Setup
+        _gravity = (-2 * _maxJumpHeight) / Mathf.Pow(_maxJumpTime / 2, 2);
+        
         //Setup Debug text
         _actionsText.text = $"Current Action: {PlayerOverworldActions.JUMP}";
     }
@@ -85,6 +103,7 @@ public class MarioOverworldPlayerController : CustomBillboard
     private void Update()
     {
         Debug.Log("Current State: " + _currentState.GetType());
+        _isGrounded = CheckGrounded();
         OnMove();
         CycleActions();
         _currentState.UpdateState();
@@ -95,6 +114,10 @@ public class MarioOverworldPlayerController : CustomBillboard
         Debug.Log("Input: " + _move.ReadValue<Vector2>());
         _cMoveVector = _move.ReadValue<Vector2>();
     }
+    
+    bool CheckGrounded(){
+        return Physics.Raycast(transform.position, Vector3.down, 2f, 1 << LayerMask.NameToLayer("Ground"));
+    } 
 
     private void CycleActions()
     {

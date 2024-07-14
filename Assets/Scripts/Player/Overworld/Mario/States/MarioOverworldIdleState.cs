@@ -1,4 +1,7 @@
+using System.Numerics;
 using UnityEngine;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Player.Overworld.Mario.States
 {
@@ -11,10 +14,12 @@ namespace Player.Overworld.Mario.States
         public override void EnterState()
         {
             _ctx.transform.rotation = Quaternion.Euler(0f, _ctx.MoveAngle, 0f); // Sets rotation of object if it was modified in any other state
+            _ctx.CharacterMove = Vector3.zero;
         }
 
         public override void UpdateState()
         {
+            HandleGravity();
             TransitionToState();
         }
 
@@ -25,6 +30,11 @@ namespace Player.Overworld.Mario.States
 
         public override void TransitionToState()
         {
+            if (!_ctx.IsGrounded)
+            {
+                SwitchStates(_factory.Falling());
+            }
+            
             if (_ctx.CharacterMove.magnitude > 0.1f)
             {
                 SwitchStates(_factory.Walking());
@@ -34,6 +44,15 @@ namespace Player.Overworld.Mario.States
         public override void AnimateState()
         {
             _ctx.MarioAnimator.Play("m_stand" + _ctx.Facing);
+        }
+        
+        private void HandleGravity()
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(_ctx.transform.position, _ctx.transform.TransformDirection(Vector3.down), out hit, 0.5f))
+            {
+                _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
+            }
         }
     }
 }

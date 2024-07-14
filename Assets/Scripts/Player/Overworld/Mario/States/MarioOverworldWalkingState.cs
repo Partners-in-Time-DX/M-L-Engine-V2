@@ -17,6 +17,7 @@ namespace Player.Overworld.Mario.States
 
         public override void UpdateState()
         {
+            HandleGravity();
             float rotateAngle = Mathf.Atan2(_ctx.CharacterMove.x, _ctx.CharacterMove.y) * Mathf.Rad2Deg + _ctx.Cam.eulerAngles.y;
             _ctx.transform.rotation = Quaternion.Euler(0f, rotateAngle, 0f);
             
@@ -45,11 +46,25 @@ namespace Player.Overworld.Mario.States
             {
                 SwitchStates(_factory.Idle());
             }
+            
+            if (!_ctx.IsGrounded)
+            {
+                SwitchStates(_factory.Falling());
+            }
         }
 
         public override void AnimateState()
         {
             _ctx.MarioAnimator.Play("m_walk" + _ctx.Facing);
+        }
+
+        private void HandleGravity()
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(_ctx.transform.position, _ctx.transform.TransformDirection(Vector3.down), out hit, 0.5f))
+            {
+                _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
+            }
         }
     }
 }
