@@ -5,6 +5,7 @@ namespace Player.Overworld.Enums
         IDLE,
         WALKING,
         ACTION,
-        FALLING
+        FALLING,
+        JUMPING
     }
 }

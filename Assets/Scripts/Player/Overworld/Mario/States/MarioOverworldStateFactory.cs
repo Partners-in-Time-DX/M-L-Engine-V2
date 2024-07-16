@@ -16,6 +16,7 @@ namespace Player.Overworld.Mario.States
             _states[PlayerOverworldStates.IDLE] = new MarioOverworldIdleState(_ctx, this);
             _states[PlayerOverworldStates.WALKING] = new MarioOverworldWalkingState(_ctx, this);
             _states[PlayerOverworldStates.FALLING] = new MarioOverworldFallingState(_ctx, this);
+            _states[PlayerOverworldStates.JUMPING] = new MarioOverworldFallingState(_ctx, this);
         }
 
         public MarioOverworldBaseState Idle()
@@ -31,6 +32,11 @@ namespace Player.Overworld.Mario.States
         public MarioOverworldBaseState Falling()
         {
             return _states[PlayerOverworldStates.FALLING];
+        }
+
+        public MarioOverworldBaseState Jumping()
+        {
+            return _states[PlayerOverworldStates.JUMPING];
         }
     }
 }

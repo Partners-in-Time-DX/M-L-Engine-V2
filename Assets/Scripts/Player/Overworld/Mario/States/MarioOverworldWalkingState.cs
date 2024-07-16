@@ -39,6 +39,11 @@ namespace Player.Overworld.Mario.States
             {
                 SwitchStates(_factory.Falling());
             }
+            
+            if (_ctx.MarioAction)
+            {
+                SwitchStates(_actionStateHelper.GetActionState(_ctx.CurrentAction));
+            }
         }
 
         public override void AnimateState()

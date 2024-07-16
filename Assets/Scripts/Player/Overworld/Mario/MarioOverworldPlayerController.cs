@@ -34,6 +34,7 @@ public class MarioOverworldPlayerController : CustomBillboard
     private InputAction _move;
     private InputAction _cycleActions;
     private InputAction _resetActions;
+    private InputAction _mAction; // For all Mario actions;
     private Vector2 _cMoveVector;
     
     //Character Controller
@@ -47,12 +48,16 @@ public class MarioOverworldPlayerController : CustomBillboard
     
     //Getters and Setters
     public MarioOverworldBaseState CurrentState { get { return _currentState; } set { _currentState = value; } }
-    public Vector2 CharacterMove { get { return _cMoveVector; } set { _cMoveVector = value; } }
-    public float MoveAngle { get { return _moveAngle; } set { _moveAngle = value; } }
+    public MarioOverworldBaseAction CurrentAction { get { return _currentAction; } set { _currentAction = value; } }
     public Animator MarioAnimator { get { return _animator; } set { _animator = value; } }
     public CharacterController MarioController { get { return _controller; } set { _controller = value; } }
     public string Facing { get { return _facing; } set { _facing = value; } }
     public Transform Cam { get { return _cam; } set { _cam = value; } }
+    
+    //Input
+    public Vector2 CharacterMove { get { return _cMoveVector; } set { _cMoveVector = value; } }
+    public float MoveAngle { get { return _moveAngle; } set { _moveAngle = value; } }
+    public bool MarioAction { get { return _mAction.triggered ? true : false; } }
     
     //Physics
     public int MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
@@ -79,6 +84,7 @@ public class MarioOverworldPlayerController : CustomBillboard
         _input = GameObject.FindWithTag("ControllerManager").GetComponent<PlayerInput>();
         _input.SwitchCurrentActionMap("Player");
         _move = _input.actions["Move"];
+        _mAction = _input.actions["_mAction"];
         _cycleActions = _input.actions["_cycleActions"];
         _resetActions = _input.actions["_resetActions"];
         

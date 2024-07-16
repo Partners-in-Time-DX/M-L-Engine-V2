@@ -10,12 +10,14 @@ namespace Player.Overworld.Mario.States
         protected MarioOverworldPlayerController _ctx;
         protected MarioOverworldStateFactory _factory;
         protected MovementHelper _movementHelper;
+        protected ActionStateHelper _actionStateHelper;
 
         public MarioOverworldBaseState(MarioOverworldPlayerController ctx, MarioOverworldStateFactory factory)
         {
             _ctx = ctx;
             _factory = factory;
             _movementHelper = new MovementHelper(_ctx);
+            _actionStateHelper = new ActionStateHelper(_factory);
         }
 
         public abstract void EnterState();
