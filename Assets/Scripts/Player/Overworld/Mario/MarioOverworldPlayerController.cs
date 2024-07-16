@@ -129,8 +129,8 @@ public class MarioOverworldPlayerController : CustomBillboard
     {
         if (_cycleActions.triggered)
         {
-            _currentActionIndexValue += 1;
-            if (_currentActionIndexValue == _actionsArray.Length)
+            _currentActionIndexValue++;
+            if (_currentActionIndexValue >= _actionsArray.Length)
             {
                 _currentActionIndexValue = 0;
             }
