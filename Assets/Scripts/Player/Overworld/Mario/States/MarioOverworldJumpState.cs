@@ -4,6 +4,7 @@ namespace Player.Overworld.Mario.States
 {
     public class MarioOverworldJumpState : MarioOverworldBaseState
     {
+        private Vector3 _newMove;
         public MarioOverworldJumpState(MarioOverworldPlayerController ctx, MarioOverworldStateFactory factory) : base(ctx, factory)
         {
         }
@@ -12,11 +13,17 @@ namespace Player.Overworld.Mario.States
         {
             _ctx.IsJumping = true;
             _ctx.Velocity = _ctx.InitialJumpVelocity;
+            _newMove = new Vector3(0f, 0f, 0f);
         }
 
         public override void UpdateState()
         {
             HandleGravity();
+            if (_ctx.CharacterMove.magnitude > 0.1f)
+            {
+                _movementHelper.HandleMovement(_newMove);
+            }
+            
             TransitionToState();
         }
 

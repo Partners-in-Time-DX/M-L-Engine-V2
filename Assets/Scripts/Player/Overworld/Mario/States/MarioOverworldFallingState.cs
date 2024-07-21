@@ -42,9 +42,12 @@ namespace Player.Overworld.Mario.States
 
         public override void TransitionToState()
         {
-            if (_ctx.MarioController.isGrounded)
+            if (_ctx.IsGrounded)
             {
                 SwitchStates(_factory.Idle());
+            } else if (_ctx.IsGrounded && _ctx.CharacterMove.magnitude >= 0.1f)
+            {
+                SwitchStates(_factory.Walking());
             }
         }
 
