@@ -7,7 +7,7 @@ using Tests.EditMode.ObjectFactory;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class Test
+public class TestMarioOverworldActionFactory
 {
     [Test]
     public void TestMarioOverworldFactoryReturnJump()
