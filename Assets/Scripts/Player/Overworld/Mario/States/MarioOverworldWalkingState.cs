@@ -40,7 +40,7 @@ namespace Player.Overworld.Mario.States
                 SwitchStates(_factory.Falling());
             }
             
-            if (_ctx.MarioAction.triggered)
+            if (_ctx.MarioAction.triggered && _ctx.IsGrounded)
             {
                 SwitchStates(_actionStateHelper.GetActionState(_ctx.CurrentAction));
             }

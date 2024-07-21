@@ -16,7 +16,6 @@ namespace Player.Overworld.Mario.States
 
         public override void UpdateState()
         {
-            _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime)); // Jumping
             HandleGravity();
             TransitionToState();
         }
@@ -41,10 +40,8 @@ namespace Player.Overworld.Mario.States
 
         private void HandleGravity()
         {
-            float prevVel = _ctx.Velocity;
             _ctx.Velocity += _ctx.Gravity * Time.deltaTime;
-            float avgVel = (prevVel + _ctx.Velocity) / 2;
-            _ctx.MarioController.Move(new Vector3(0f, avgVel * Time.deltaTime));
+            _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
         }
     }
 }

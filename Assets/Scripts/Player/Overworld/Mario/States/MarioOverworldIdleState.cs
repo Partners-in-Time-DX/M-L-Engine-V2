@@ -19,7 +19,6 @@ namespace Player.Overworld.Mario.States
 
         public override void UpdateState()
         {
-            HandleGravity();
             TransitionToState();
         }
 
@@ -40,24 +39,16 @@ namespace Player.Overworld.Mario.States
                 SwitchStates(_factory.Walking());
             }
 
-            if (_ctx.MarioAction.triggered)
+            if (_ctx.MarioAction.triggered && _ctx.IsGrounded)
             {
-                SwitchStates(_actionStateHelper.GetActionState(_ctx.CurrentAction));
+                MarioOverworldBaseState actionState = _actionStateHelper.GetActionState(_ctx.CurrentAction);
+                SwitchStates(actionState);
             }
         }
 
         public override void AnimateState()
         {
             _ctx.MarioAnimator.Play("m_stand" + _ctx.Facing);
-        }
-        
-        private void HandleGravity()
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(_ctx.transform.position, _ctx.transform.TransformDirection(Vector3.down), out hit, 0.5f))
-            {
-                _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
-            }
         }
     }
 }

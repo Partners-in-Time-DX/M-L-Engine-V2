@@ -127,6 +127,10 @@ public class MarioOverworldPlayerController : CustomBillboard
     }
     
     private bool CheckGrounded(){
+        if (_isJumping)
+        {
+            return false;
+        }
         return Physics.Raycast(transform.position, Vector3.down, 2f, 1 << LayerMask.NameToLayer("Ground"));
     } 
 
