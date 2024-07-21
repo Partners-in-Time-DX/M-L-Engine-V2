@@ -28,6 +28,7 @@ public class MarioOverworldPlayerController : CustomBillboard
     private float _maxJumpHeight = 4f;
     private float _maxJumpTime = 0.65f;
     private bool _isGrounded;
+    private bool _isJumping;
     
     //Controls
     private PlayerInput _input;
@@ -57,16 +58,18 @@ public class MarioOverworldPlayerController : CustomBillboard
     //Input
     public Vector2 CharacterMove { get { return _cMoveVector; } set { _cMoveVector = value; } }
     public float MoveAngle { get { return _moveAngle; } set { _moveAngle = value; } }
-    public bool MarioAction { get { return _mAction.triggered ? true : false; } }
+    public InputAction MarioAction { get { return _mAction; } }
     
     //Physics
     public int MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
     public float Velocity { get { return _velocity; } set { _velocity = value; } }
     public float Gravity { get { return _gravity; } set { _gravity = value; } }
+    public float InitialJumpVelocity { get { return _initialJumpVelocity; } }
     public float FallMultiplier { get { return _fallMultiplier; } set { _fallMultiplier = value; } }
     public float MaxJumpHeight { get { return _maxJumpHeight; } set { _maxJumpHeight = value; } }
     public float MaxJumpTime { get { return _maxJumpTime; } set { _maxJumpTime = value; } }
     public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
+    public bool IsJumping { get { return _isJumping; } set { _isJumping = value; } }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -100,6 +103,8 @@ public class MarioOverworldPlayerController : CustomBillboard
         
         // Jump Setup
         _gravity = (-2 * _maxJumpHeight) / Mathf.Pow(_maxJumpTime / 2, 2);
+        _initialJumpVelocity = (2 * _maxJumpHeight) / (_maxJumpTime / 2);
+        _isJumping = false;
         
         //Setup Debug text
         _actionsText.text = $"Current Action: {PlayerOverworldActions.JUMP}";

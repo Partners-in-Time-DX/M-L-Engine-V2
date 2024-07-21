@@ -30,7 +30,7 @@ namespace Player.Overworld.Mario.States
 
         public override void TransitionToState()
         {
-            if (!_ctx.IsGrounded)
+            if (!_ctx.IsGrounded && !_ctx.IsJumping)
             {
                 SwitchStates(_factory.Falling());
             }
@@ -40,7 +40,7 @@ namespace Player.Overworld.Mario.States
                 SwitchStates(_factory.Walking());
             }
 
-            if (_ctx.MarioAction)
+            if (_ctx.MarioAction.triggered)
             {
                 SwitchStates(_actionStateHelper.GetActionState(_ctx.CurrentAction));
             }
