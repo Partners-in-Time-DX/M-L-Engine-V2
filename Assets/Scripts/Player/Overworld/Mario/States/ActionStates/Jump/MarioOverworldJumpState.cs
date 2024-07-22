@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Player.Overworld.Mario.States
+namespace Player.Overworld.Mario.States.ActionStates.Jump
 {
     public class MarioOverworldJumpState : MarioOverworldBaseState
     {

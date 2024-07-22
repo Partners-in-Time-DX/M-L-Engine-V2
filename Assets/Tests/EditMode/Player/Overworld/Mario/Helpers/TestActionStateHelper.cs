@@ -2,6 +2,7 @@ using NUnit.Framework;
 using Player.Overworld.Enums;
 using Player.Overworld.Mario.Helpers;
 using Player.Overworld.Mario.States;
+using Player.Overworld.Mario.States.ActionStates.Jump;
 using Tests.EditMode.ObjectFactory;
 
 namespace Tests.EditMode.Player.Overworld.Mario.Helpers
