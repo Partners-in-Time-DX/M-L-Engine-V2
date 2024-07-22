@@ -1,4 +1,7 @@
-namespace Player.Overworld.Mario.States
+using Player.Overworld.Mario.States;
+using UnityEngine;
+
+namespace Player.Overworld.Mario.Actions
 {
     public class MarioOverworldJumpAction : MarioOverworldBaseAction
     {
@@ -10,7 +13,8 @@ namespace Player.Overworld.Mario.States
         
         public override void HandleAction()
         {
-
+            _ctx.Velocity += _ctx.Gravity * Time.deltaTime;
+            _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
         }
     }
 }

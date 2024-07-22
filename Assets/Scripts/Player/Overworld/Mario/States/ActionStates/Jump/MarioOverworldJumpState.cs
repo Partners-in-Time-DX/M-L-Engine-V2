@@ -18,7 +18,7 @@ namespace Player.Overworld.Mario.States.ActionStates.Jump
 
         public override void UpdateState()
         {
-            HandleGravity();
+            _ctx.CurrentAction.HandleAction();
             if (_ctx.CharacterMove.magnitude > 0.1f)
             {
                 _movementHelper.HandleMovement(_newMove);
@@ -43,12 +43,6 @@ namespace Player.Overworld.Mario.States.ActionStates.Jump
         public override void AnimateState()
         {
             _ctx.MarioAnimator.Play("m_jump" + _ctx.Facing);
-        }
-
-        private void HandleGravity()
-        {
-            _ctx.Velocity += _ctx.Gravity * Time.deltaTime;
-            _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using ErrorHandling.Exceptions;
 using NUnit.Framework;
 using Player.Overworld.Enums;
+using Player.Overworld.Mario.Actions;
 using Player.Overworld.Mario.States;
 using Tests.EditMode.ObjectFactory;
 using UnityEngine;

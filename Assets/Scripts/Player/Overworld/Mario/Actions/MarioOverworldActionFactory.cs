@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ErrorHandling.Exceptions;
 using Player.Overworld.Enums;
+using Player.Overworld.Mario.Actions;
 
 namespace Player.Overworld.Mario.States
 {

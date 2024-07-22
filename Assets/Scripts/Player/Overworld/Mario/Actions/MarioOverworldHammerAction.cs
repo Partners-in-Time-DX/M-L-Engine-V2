@@ -1,4 +1,6 @@
-namespace Player.Overworld.Mario.States
+using Player.Overworld.Mario.States;
+
+namespace Player.Overworld.Mario.Actions
 {
     public class MarioOverworldHammerAction : MarioOverworldBaseAction
     {
