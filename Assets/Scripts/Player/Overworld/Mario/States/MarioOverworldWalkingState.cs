@@ -17,7 +17,6 @@ namespace Player.Overworld.Mario.States
 
         public override void UpdateState()
         {
-            HandleGravity();
             _movementHelper.HandleMovement(_newMove);
             
             TransitionToState();
@@ -49,15 +48,6 @@ namespace Player.Overworld.Mario.States
         public override void AnimateState()
         {
             _ctx.MarioAnimator.Play("m_walk" + _ctx.Facing);
-        }
-
-        private void HandleGravity()
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(_ctx.transform.position, _ctx.transform.TransformDirection(Vector3.down), out hit, 0.5f))
-            {
-                _ctx.MarioController.Move(new Vector3(0f, _ctx.Velocity * Time.deltaTime));
-            }
         }
     }
 }
