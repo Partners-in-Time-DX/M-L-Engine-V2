@@ -2,6 +2,7 @@ using NUnit.Framework;
 using Player.Overworld.Enums;
 using Player.Overworld.Mario.Helpers;
 using Player.Overworld.Mario.States;
+using Player.Overworld.Mario.States.ActionStates.Hammer;
 using Player.Overworld.Mario.States.ActionStates.Jump;
 using Tests.EditMode.ObjectFactory;
 
@@ -22,6 +23,21 @@ namespace Tests.EditMode.Player.Overworld.Mario.Helpers
             var currentActionState = actionStateHelper.GetActionState(currentAction);
             
             Assert.AreEqual(currentActionState.GetType(), typeof(MarioOverworldJumpState));
+        }
+        
+        [Test]
+        public void TestGetActionStateReturnsHammer()
+        {
+            //Generate monobehaviour using TestableObjectFactory
+            var playerController = TestableObjectFactory.Create<MarioOverworldPlayerController>();
+            var stateFactory = new MarioOverworldStateFactory(playerController);
+            var actionFactory = new MarioOverworldActionFactory(playerController);
+            var actionStateHelper = new ActionStateHelper(stateFactory);
+            var currentAction = actionFactory.GetCurrentAction(PlayerOverworldActions.HAMMER);
+
+            var currentActionState = actionStateHelper.GetActionState(currentAction);
+            
+            Assert.AreEqual(currentActionState.GetType(), typeof(MarioOverworldHammerState));
         }
     }
 }
