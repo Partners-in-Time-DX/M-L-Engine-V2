@@ -17,7 +17,7 @@ namespace Player.Overworld.Mario.States
         public override void UpdateState()
         {
                 
-            HandleGravity();
+            _movementHelper.HandleGravity();
 
             if (_ctx.CharacterMove.magnitude > 0.1f)
             {
@@ -25,14 +25,6 @@ namespace Player.Overworld.Mario.States
             }
             
             TransitionToState();
-        }
-
-        private void HandleGravity()
-        {
-            float prevVel = _ctx.Velocity;
-            _ctx.Velocity += _ctx.Gravity * Time.deltaTime * _ctx.FallMultiplier;
-            float avgVel = (prevVel + _ctx.Velocity) / 2;
-            _ctx.MarioController.Move(new Vector3(0f, avgVel * Time.deltaTime));   
         }
 
         public override void ExitState()

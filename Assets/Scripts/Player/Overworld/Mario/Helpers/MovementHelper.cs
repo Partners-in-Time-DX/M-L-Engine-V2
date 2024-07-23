@@ -27,5 +27,13 @@ namespace Player.Overworld.Mario.Helpers
                 _ctx.MarioController.Move(newMove);      
             }
         }
+
+        public void HandleGravity()
+        {
+            float prevVel = _ctx.Velocity;
+            _ctx.Velocity += _ctx.Gravity * Time.deltaTime * _ctx.FallMultiplier;
+            float avgVel = (prevVel + _ctx.Velocity) / 2;
+            _ctx.MarioController.Move(new Vector3(0f, avgVel * Time.deltaTime));   
+        }
     }
 }
