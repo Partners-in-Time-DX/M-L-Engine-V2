@@ -21,6 +21,10 @@ namespace Player.Overworld.Mario.Helpers
             {
                 return _stateFactory.Jumping();
             }
+            else if (action is MarioOverworldHammerAction)
+            {
+                return _stateFactory.Hammer();
+            }
 
             throw new InvalidPlayerActionException($"Invalid MarioOverworldBaseAction: {action.GetType()} passed in GetActionState.");
         }

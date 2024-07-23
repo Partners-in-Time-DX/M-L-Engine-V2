@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Player.Overworld.Enums;
+using Player.Overworld.Mario.States.ActionStates.Hammer;
 using Player.Overworld.Mario.States.ActionStates.Jump;
 
 namespace Player.Overworld.Mario.States
@@ -18,6 +19,7 @@ namespace Player.Overworld.Mario.States
             _states[PlayerOverworldStates.WALKING] = new MarioOverworldWalkingState(_ctx, this);
             _states[PlayerOverworldStates.FALLING] = new MarioOverworldFallingState(_ctx, this);
             _states[PlayerOverworldStates.JUMPING] = new MarioOverworldJumpState(_ctx, this);
+            _states[PlayerOverworldStates.HAMMER] = new MarioOverworldHammerState(_ctx, this);
         }
 
         public MarioOverworldBaseState Idle()
@@ -38,6 +40,11 @@ namespace Player.Overworld.Mario.States
         public MarioOverworldBaseState Jumping()
         {
             return _states[PlayerOverworldStates.JUMPING];
+        }
+        
+        public MarioOverworldBaseState Hammer()
+        {
+            return _states[PlayerOverworldStates.HAMMER];
         }
     }
 }

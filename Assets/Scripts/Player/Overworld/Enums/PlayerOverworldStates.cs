@@ -6,6 +6,7 @@ namespace Player.Overworld.Enums
         WALKING,
         ACTION,
         FALLING,
-        JUMPING
+        JUMPING,
+        HAMMER
     }
 }
