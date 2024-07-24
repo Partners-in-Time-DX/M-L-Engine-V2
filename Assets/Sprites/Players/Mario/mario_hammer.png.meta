@@ -1,0 +1,2415 @@
+fileFormatVersion: 2
+guid: 36af62cf0e43a4744a765ce116f6209a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: m_hammer_land_d_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 598
+        width: 47
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53488374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7aea2f661342a4b87e87c54b617ca6
+      internalID: 1171169335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 496
+        width: 44
+        height: 36
+      alignment: 9
+      pivot: {x: 0.53409094, y: 0.6666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c084b5e0fff14ea9efb9296e2e205
+      internalID: 1780004883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 555
+        width: 46
+        height: 41
+      alignment: 9
+      pivot: {x: 0.48913044, y: 0.5609756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326c3166f723ad545af9618f7485772d
+      internalID: 487573662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 232
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5113636, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17de86b90e93f04d8e7c49f64040df4
+      internalID: 1255098924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 638
+        width: 41
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5487805, y: 0.51111114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4c34e3fe8756640b91d8b3af658da1
+      internalID: 1727899102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 232
+        width: 44
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4659091, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ec3b3cf70bb0743a6bc845011449ac
+      internalID: -155002432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 132
+        width: 35
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbccf4cf8eac5245b7c6aacf2247857
+      internalID: 2054172199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 58
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.46774194, y: 0.6315789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6671129fde138c42a89fc0ab774fa20
+      internalID: -607816723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_d_8
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 247
+        width: 27
+        height: 44
+      alignment: 9
+      pivot: {x: 0.42592594, y: 0.54545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887cbd70466a91945be5552896a1562f
+      internalID: -1579245956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 509
+        width: 28
+        height: 47
+      alignment: 9
+      pivot: {x: 0.51785713, y: 0.5106383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833e0472e0656134abd056e81ccf96e9
+      internalID: -1529775403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 72
+        width: 30
+        height: 39
+      alignment: 9
+      pivot: {x: 0.48333332, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dce9e9ea4292b4cb1473b3e85362d1
+      internalID: -1864475158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 50
+        width: 33
+        height: 35
+      alignment: 9
+      pivot: {x: 0.46969697, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb07fa30f3edd54b8e6632528374061
+      internalID: -956450364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 415
+        width: 44
+        height: 42
+      alignment: 9
+      pivot: {x: 0.48863637, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c3c0a00e68c2545a3c543629eab7fb
+      internalID: 1391691967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 150
+        width: 34
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3970588, y: 0.5405405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662d0a4fe4a78c14b84e3ca81360916a
+      internalID: 832983518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 232
+        width: 36
+        height: 37
+      alignment: 9
+      pivot: {x: 0.375, y: 0.6216216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b101e293a5711a47a4a30be48943050
+      internalID: 1603283817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_6
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 150
+        width: 34
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3382353, y: 0.5405405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44708198ef4a4464db0f7ec3331183c7
+      internalID: 201074432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 533
+        width: 38
+        height: 42
+      alignment: 9
+      pivot: {x: 0.38157895, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688d4522ff791e741b1a928099f2eee1
+      internalID: 38340677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dl_8
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 354
+        width: 33
+        height: 42
+      alignment: 9
+      pivot: {x: 0.28787878, y: 0.47619048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063ff4002f0eccd4f991f6f307a72f64
+      internalID: -1142147583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 321
+        width: 39
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5769231, y: 0.47826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee20651fdf25cfb48a5b85516e4bce7a
+      internalID: 1514216573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 274
+        width: 39
+        height: 45
+      alignment: 9
+      pivot: {x: 0.525641, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c700113903e75e4ba77ab659ce32e77
+      internalID: 1807777412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 136
+        width: 40
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5125, y: 0.52380955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608664c04f746d74f82f8971f6a80b5e
+      internalID: -2088931786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 588
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.47435898, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285d8e5ca9e810941851f56457db45a0
+      internalID: -882567048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 136
+        width: 40
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4625, y: 0.52380955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a25532e5387b084998a866a7baf40e4
+      internalID: -171363975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 588
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.42307693, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67ac2d9c9287504cad05a665e7bec1b
+      internalID: -1685709450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 271
+        width: 36
+        height: 37
+      alignment: 9
+      pivot: {x: 0.375, y: 0.5945946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d203c5cda82911e41872502a4987e0a6
+      internalID: -1812830278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 91
+        width: 30
+        height: 39
+      alignment: 9
+      pivot: {x: 0.31666666, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc6936737af66c4ba8f309c99379cc7
+      internalID: 728302020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_dr_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 397
+        width: 30
+        height: 48
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da57ef286735805459f659848018103a
+      internalID: 1175761894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 445
+        width: 31
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5967742, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2fa7a51de9da94ba47e9c197fb2796
+      internalID: 1864346561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 459
+        width: 38
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5394737, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88a8d0a02d96894198e2668631ba5d1
+      internalID: 562629032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 369
+        width: 41
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5487805, y: 0.54545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35744540fec0dfe40a8ce466a7099497
+      internalID: -783377022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 193
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.44285715, y: 0.5675676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ca59551de00ed468a04cfe62f1476f
+      internalID: 140525440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_4
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 218
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.41428572, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a92ceed1d92e340acabb5a76409cdc
+      internalID: 1030609388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 193
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3857143, y: 0.5675676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92856daedcede8f448bacb2cdafdbe7d
+      internalID: 771873633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 218
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.35714287, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d441f67fd14e63409c55543f277979c
+      internalID: 561512023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 432
+        width: 35
+        height: 41
+      alignment: 9
+      pivot: {x: 0.32857144, y: 0.5121951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0360dfb316fab4f4b8cd956ea9d13776
+      internalID: -993776316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_l_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 635
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3510684cffa694bbf9c18bd100540b
+      internalID: -407070428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 398
+        width: 35
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5285714, y: 0.4878049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3903d4df608c24ca1160d37bfdafee
+      internalID: -615480597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 495
+        width: 39
+        height: 44
+      alignment: 9
+      pivot: {x: 0.55128205, y: 0.47727272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4106704ca91fc124fb677287fb20eda2
+      internalID: 566744410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 570
+        width: 41
+        height: 43
+      alignment: 9
+      pivot: {x: 0.47560975, y: 0.5116279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8912ee94e66d214d8f8b25afd7bf764
+      internalID: -1734264795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 642
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5243902, y: 0.5121951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a15d6b63dd7ef7408ce8bdcc02d610f
+      internalID: -1416313628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 570
+        width: 41
+        height: 43
+      alignment: 9
+      pivot: {x: 0.42682928, y: 0.5116279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e948c0b1751f14cabef44752437823
+      internalID: -1087095292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 642
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.47560975, y: 0.5121951}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbc6a84f0c629c4490c8a51c75fb572
+      internalID: 1644339825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 637
+        width: 43
+        height: 46
+      alignment: 9
+      pivot: {x: 0.47674417, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a11846accb6d3469781b86569f0680
+      internalID: -1065883211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_7
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 311
+        width: 33
+        height: 41
+      alignment: 9
+      pivot: {x: 0.28787878, y: 0.58536583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ca4e81674768d4e842623adc34a4b1
+      internalID: -1794121346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_r_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 293
+        width: 30
+        height: 43
+      alignment: 9
+      pivot: {x: 0.21666667, y: 0.55813956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed738de36ed93d241822030f5bd25910
+      internalID: -522901480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 143
+        width: 33
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6818182, y: 0.36842105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def80efd78f3b9248aa51387f6753f1e
+      internalID: -1672276503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 113
+        width: 35
+        height: 35
+      alignment: 9
+      pivot: {x: 0.64285713, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c6132d6c967ae49954afddc241ab33
+      internalID: -427969046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 33
+        height: 35
+      alignment: 9
+      pivot: {x: 0.6212121, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954409927979ba64997dbcdbc63c8849
+      internalID: -659776581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 351
+        width: 46
+        height: 35
+      alignment: 9
+      pivot: {x: 0.48913044, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fd33f3f41c2504a9d6ec572cc18988
+      internalID: -1357659404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 360
+        width: 40
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5125, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e729acfc608ab3a448a7b9f23edb86c9
+      internalID: -814070793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 234
+        width: 37
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5540541, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18d23dfd4c98ec469310e4102f6182e
+      internalID: 1488387551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 31
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9d41d92a5b1fc4fae41a0717250970
+      internalID: 1019331598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_7
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 31
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.46296296, y: 0.51282054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3987ebf406411804d8a61cbf9202dd27
+      internalID: -2000085945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_u_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 40
+        width: 21
+        height: 45
+      alignment: 9
+      pivot: {x: 0.4047619, y: 0.51111114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29a9ffd1fb16d94891f17e21dd7f0da
+      internalID: 1705137435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 145
+        width: 25
+        height: 46
+      alignment: 9
+      pivot: {x: 0.46, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c857f5b0b95a4144b8ca907802d4476
+      internalID: -2118802974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 87
+        width: 26
+        height: 43
+      alignment: 9
+      pivot: {x: 0.40384614, y: 0.55813956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335fabce29354a94182476f35931d2b7
+      internalID: 1028265813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 18
+        width: 27
+        height: 38
+      alignment: 9
+      pivot: {x: 0.35185185, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b589fcae62eeb46b096f8ca05f4982
+      internalID: -2037251493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 264
+        width: 31
+        height: 42
+      alignment: 9
+      pivot: {x: 0.33870968, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f8aaf1b55178b468fac82102179150
+      internalID: 1555694903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 189
+        width: 28
+        height: 43
+      alignment: 9
+      pivot: {x: 0.30357143, y: 0.4651163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724fa3da8f846c4fa3a42eee08f9959
+      internalID: 1593804037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 264
+        width: 31
+        height: 42
+      alignment: 9
+      pivot: {x: 0.27419356, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824fbb1025a38f74eacb2faaf067dc04
+      internalID: -145250813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_6
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 189
+        width: 28
+        height: 43
+      alignment: 9
+      pivot: {x: 0.23214285, y: 0.4651163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08430b40c8331e4c8b00ab052da061d
+      internalID: 906678767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1
+        width: 27
+        height: 37
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.45945945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b0dbbd64d855848b9bf8b49d0de952
+      internalID: 1004008072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ul_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 92
+        width: 27
+        height: 42
+      alignment: 9
+      pivot: {x: 0.12962963, y: 0.42857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0816519d5149044480a24bc30242233
+      internalID: -199740135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 99
+        width: 27
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6481481, y: 0.42857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f82a76da7b757849be2b3198daaabf3
+      internalID: 30511211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 11
+        width: 27
+        height: 37
+      alignment: 9
+      pivot: {x: 0.6111111, y: 0.45945945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775f16ba35744324598a4e5b5f760e27
+      internalID: 1436574460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 62
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5740741, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edaea9160b5d8b45a37ebc287076c0b
+      internalID: 378907693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3
+        width: 27
+        height: 35
+      alignment: 9
+      pivot: {x: 0.537037, y: 0.4857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f411b19c48b394fbbc018bf8a1b8fe
+      internalID: 798797080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_4
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 62
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46153846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04a18af2f9b37f43a953ef2c28c20f1
+      internalID: -1911034339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3
+        width: 27
+        height: 35
+      alignment: 9
+      pivot: {x: 0.46296296, y: 0.4857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa67af6b8c96fc429203695dd71314f
+      internalID: 288159275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 22
+        width: 27
+        height: 38
+      alignment: 9
+      pivot: {x: 0.42592594, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bb301393770fe4db5dde826f23c473
+      internalID: -455284164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 98
+        width: 26
+        height: 43
+      alignment: 9
+      pivot: {x: 0.3653846, y: 0.55813956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcb934a8232ffc4283993c64bbcbd50
+      internalID: 1590238831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_land_ur_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 170
+        width: 25
+        height: 46
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5217391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0f56d64971191409f92d3b45f1fd57
+      internalID: -1088331581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_d_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 183
+        width: 22
+        height: 49
+      alignment: 9
+      pivot: {x: 0.59090906, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b349ecf277770d44b98c8be480223933
+      internalID: -810809633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_d_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 153
+        width: 21
+        height: 49
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7632bbe8d043a6e4ab9975f8f1309336
+      internalID: -1170340181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_d_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 489
+        width: 28
+        height: 49
+      alignment: 9
+      pivot: {x: 0.21428572, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c52a00cce55c143911a2dfa613fc43
+      internalID: -1269863751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_dl_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 540
+        width: 28
+        height: 49
+      alignment: 9
+      pivot: {x: 0.78571427, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bd1907032566b41ae9e8b12e5e504d
+      internalID: 370774028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_dl_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 444
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb0b0d66dad5e343851ae0b13823342
+      internalID: 1685684915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_dl_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 637
+        width: 41
+        height: 46
+      alignment: 9
+      pivot: {x: 0.46341464, y: 0.5326087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e748d61788231ea4f9e769b9b25f9716
+      internalID: 1413055838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_dr_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 187
+        width: 35
+        height: 47
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5212766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9eeb716fd18b243a00ad5590024328
+      internalID: -329173923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_dr_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 179
+        width: 34
+        height: 49
+      alignment: 9
+      pivot: {x: 0.44117647, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45efa7aeb722a874c9c50e932aa995bf
+      internalID: 2042339649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_dr_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 591
+        width: 28
+        height: 49
+      alignment: 9
+      pivot: {x: 0.21428572, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bddb4ea77b25d41bd3125ecef26ebc
+      internalID: -1484696521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_l_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 258
+        width: 25
+        height: 48
+      alignment: 9
+      pivot: {x: 0.84, y: 0.48958334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8e3f5917f13f7419f5b2645b3214c1
+      internalID: -351764352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_l_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 504
+        width: 37
+        height: 49
+      alignment: 9
+      pivot: {x: 0.4054054, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda07ba2936849e49a0d302370c7baea
+      internalID: -872733729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_l_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 394
+        width: 30
+        height: 48
+      alignment: 9
+      pivot: {x: 0.26666668, y: 0.5104167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f6f19ab8b98774598c03ff19730935
+      internalID: 1050783138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_r_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 447
+        width: 31
+        height: 47
+      alignment: 9
+      pivot: {x: 0.7096774, y: 0.5212766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0152fb3edb4b667459940b922b83a492
+      internalID: -984700834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_r_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 493
+        width: 29
+        height: 48
+      alignment: 9
+      pivot: {x: 0.62068963, y: 0.5104167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e3900f9ddcab94ca31a1ab7a452a07
+      internalID: 296260205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_r_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 395
+        width: 28
+        height: 48
+      alignment: 9
+      pivot: {x: 0.25, y: 0.48958334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5000e35ff20355c4588d184f587c4927
+      internalID: -448581518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_u_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 52
+        width: 21
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5222222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd73a82b256a124a984ed1ba37b4630
+      internalID: 2114766602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_u_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 103
+        width: 21
+        height: 48
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.48958334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458ef42b13803c045adeb671ac7c0811
+      internalID: -1642920690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_u_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 340
+        width: 23
+        height: 46
+      alignment: 9
+      pivot: {x: 0.13043478, y: 0.4673913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a87f4356238954aac00e4640d75983
+      internalID: -2007527327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_ur_0
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 338
+        width: 26
+        height: 48
+      alignment: 9
+      pivot: {x: 0.84615386, y: 0.48958334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1cbb7d7387a644e84664a6ace7d519
+      internalID: -974185139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_ur_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 534
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.46666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9647fe1307a1943918e3e5e9bc3a92
+      internalID: 1887271367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_lift_ur_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 441
+        width: 30
+        height: 46
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5326087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddcef4ead5c5d842bfc4a025d0dbfd3
+      internalID: 1929342634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_d_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 543
+        width: 33
+        height: 44
+      alignment: 9
+      pivot: {x: 0.54545456, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eec954fb01dc0c4e9c36f19556c753b
+      internalID: -2098924839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_dl_0
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 204
+        width: 29
+        height: 41
+      alignment: 9
+      pivot: {x: 0.37931034, y: 0.6097561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c7d1775dec42a429e37f811a182339
+      internalID: -602815913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_dr_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 590
+        width: 30
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4893617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31b349c521ce3c48a6627cab25b74e2
+      internalID: -585360385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_l_0
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 388
+        width: 33
+        height: 42
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.61904764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc9fdb8b1f1396499791a3e423e7ef6
+      internalID: 686143164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_r_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 591
+        width: 34
+        height: 44
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.4090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf93aa19fff7fa4c87051bb41955ccf
+      internalID: 812564791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_u_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 308
+        width: 32
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.31707317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a28e0ae2e6a7ed4ea8d2beb8ca4c128
+      internalID: 503569044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: m_hammer_swing_ur_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 304
+        width: 27
+        height: 46
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.6086956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ff42e378f806545a96d54229601fb4
+      internalID: -1132504467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1453df7ff86e0dc42bd16253a09e39fb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      m_hammer_land_d_0: 1171169335
+      m_hammer_land_d_1: 1780004883
+      m_hammer_land_d_2: 487573662
+      m_hammer_land_d_3: 1255098924
+      m_hammer_land_d_4: 1727899102
+      m_hammer_land_d_5: -155002432
+      m_hammer_land_d_6: 2054172199
+      m_hammer_land_d_7: -607816723
+      m_hammer_land_d_8: -1579245956
+      m_hammer_land_dl_0: -1529775403
+      m_hammer_land_dl_1: -1864475158
+      m_hammer_land_dl_2: -956450364
+      m_hammer_land_dl_3: 1391691967
+      m_hammer_land_dl_4: 832983518
+      m_hammer_land_dl_5: 1603283817
+      m_hammer_land_dl_6: 201074432
+      m_hammer_land_dl_7: 38340677
+      m_hammer_land_dl_8: -1142147583
+      m_hammer_land_dr_0: 1514216573
+      m_hammer_land_dr_1: 1807777412
+      m_hammer_land_dr_2: -2088931786
+      m_hammer_land_dr_3: -882567048
+      m_hammer_land_dr_4: -171363975
+      m_hammer_land_dr_5: -1685709450
+      m_hammer_land_dr_6: -1812830278
+      m_hammer_land_dr_7: 728302020
+      m_hammer_land_dr_8: 1175761894
+      m_hammer_land_l_0: 1864346561
+      m_hammer_land_l_1: 562629032
+      m_hammer_land_l_2: -783377022
+      m_hammer_land_l_3: 140525440
+      m_hammer_land_l_4: 1030609388
+      m_hammer_land_l_5: 771873633
+      m_hammer_land_l_6: 561512023
+      m_hammer_land_l_7: -993776316
+      m_hammer_land_l_8: -407070428
+      m_hammer_land_r_0: -615480597
+      m_hammer_land_r_1: 566744410
+      m_hammer_land_r_2: -1734264795
+      m_hammer_land_r_3: -1416313628
+      m_hammer_land_r_4: -1087095292
+      m_hammer_land_r_5: 1644339825
+      m_hammer_land_r_6: -1065883211
+      m_hammer_land_r_7: -1794121346
+      m_hammer_land_r_8: -522901480
+      m_hammer_land_u_0: -1672276503
+      m_hammer_land_u_1: -427969046
+      m_hammer_land_u_2: -659776581
+      m_hammer_land_u_3: -1357659404
+      m_hammer_land_u_4: -814070793
+      m_hammer_land_u_5: 1488387551
+      m_hammer_land_u_6: 1019331598
+      m_hammer_land_u_7: -2000085945
+      m_hammer_land_u_8: 1705137435
+      m_hammer_land_ul_0: -2118802974
+      m_hammer_land_ul_1: 1028265813
+      m_hammer_land_ul_2: -2037251493
+      m_hammer_land_ul_3: 1555694903
+      m_hammer_land_ul_4: 1593804037
+      m_hammer_land_ul_5: -145250813
+      m_hammer_land_ul_6: 906678767
+      m_hammer_land_ul_7: 1004008072
+      m_hammer_land_ul_8: -199740135
+      m_hammer_land_ur_0: 30511211
+      m_hammer_land_ur_1: 1436574460
+      m_hammer_land_ur_2: 378907693
+      m_hammer_land_ur_3: 798797080
+      m_hammer_land_ur_4: -1911034339
+      m_hammer_land_ur_5: 288159275
+      m_hammer_land_ur_6: -455284164
+      m_hammer_land_ur_7: 1590238831
+      m_hammer_land_ur_8: -1088331581
+      m_hammer_lift_d_0: -810809633
+      m_hammer_lift_d_1: -1170340181
+      m_hammer_lift_d_2: -1269863751
+      m_hammer_lift_dl_0: 370774028
+      m_hammer_lift_dl_1: 1685684915
+      m_hammer_lift_dl_2: 1413055838
+      m_hammer_lift_dr_0: -329173923
+      m_hammer_lift_dr_1: 2042339649
+      m_hammer_lift_dr_2: -1484696521
+      m_hammer_lift_l_0: -351764352
+      m_hammer_lift_l_1: -872733729
+      m_hammer_lift_l_2: 1050783138
+      m_hammer_lift_r_0: -984700834
+      m_hammer_lift_r_1: 296260205
+      m_hammer_lift_r_2: -448581518
+      m_hammer_lift_u_0: 2114766602
+      m_hammer_lift_u_1: -1642920690
+      m_hammer_lift_u_2: -2007527327
+      m_hammer_lift_ur_0: -974185139
+      m_hammer_lift_ur_1: 1887271367
+      m_hammer_lift_ur_2: 1929342634
+      m_hammer_swing_d_0: -2098924839
+      m_hammer_swing_dl_0: -602815913
+      m_hammer_swing_dr_0: -585360385
+      m_hammer_swing_l_0: 686143164
+      m_hammer_swing_r_0: 812564791
+      m_hammer_swing_u_0: 503569044
+      m_hammer_swing_ur_0: -1132504467
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
