@@ -504,6 +504,17 @@
                 },
                 {
                     "name": "",
+                    "id": "f2850472-d097-41d5-b07c-abe66b6affcd",
+                    "path": "<DualSenseGamepadHID>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_mAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8f120d5a-0678-4a3d-a2e1-3740ee9d6e8e",
                     "path": "<Keyboard>/leftAlt",
                     "interactions": "",
@@ -548,6 +559,17 @@
                 },
                 {
                     "name": "",
+                    "id": "83e41ef0-7cce-44d0-9178-48446580a08b",
+                    "path": "<DualSenseGamepadHID>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_cycleActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b0a67470-dbeb-445d-a496-7b22338254fc",
                     "path": "<Keyboard>/x",
                     "interactions": "",
@@ -583,6 +605,17 @@
                     "name": "",
                     "id": "a18d73cd-058d-4c3f-8277-caed95016a14",
                     "path": "<XInputController>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "_resetActions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b2419a4-ee24-4d5d-8c25-855c2e68aaf5",
+                    "path": "<DualSenseGamepadHID>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
