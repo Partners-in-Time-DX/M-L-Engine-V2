@@ -1,7 +1,7 @@
-## <ins>About</ins>
+## About
 Engine for creating Mario & Luigi style RPGs in Unity.
 
-## <ins>Controls</ins>
+## Controls
 Controls are as follows
 
 Movement: WASD, Arrow Keys, Left Stick
