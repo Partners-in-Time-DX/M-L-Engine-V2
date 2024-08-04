@@ -420,6 +420,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 71341171c23bd8946a3c8f4aa8dca356, type: 3}
       insertIndex: -1
       addedObject: {fileID: 965320722}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 71341171c23bd8946a3c8f4aa8dca356, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 965320723}
   m_SourcePrefab: {fileID: 100100000, guid: 71341171c23bd8946a3c8f4aa8dca356, type: 3}
 --- !u!1 &529538579
 GameObject:
@@ -1456,6 +1459,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &965320723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965320719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea5a77b23784319b9cde1e695fcb372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1095097900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,9 +2300,9 @@ GameObject:
   - component: {fileID: 1639283125}
   - component: {fileID: 1639283124}
   - component: {fileID: 1639283123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mario
-  m_TagString: Untagged
+  m_TagString: Mario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
