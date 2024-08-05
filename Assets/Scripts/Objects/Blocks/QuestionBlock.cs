@@ -35,7 +35,7 @@ namespace Objects.Blocks
 
         private float GetAnimationTime()
         {
-            return _animator.GetCurrentAnimatorClipInfo(0).Length;
+            return _animator.GetCurrentAnimatorStateInfo(0).length;
         }
     }
 }
