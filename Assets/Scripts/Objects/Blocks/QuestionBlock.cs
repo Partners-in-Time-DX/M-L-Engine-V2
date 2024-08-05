@@ -5,6 +5,12 @@ namespace Objects.Blocks
 {
     public class QuestionBlock : AbstractBlock
     {
+        private ObjectTransformer _objectTransformer;
+
+        private void Awake()
+        {
+            _objectTransformer = GetComponent<ObjectTransformer>();
+        }
         protected override bool CheckHit()
         {
             return Physics.SphereCast(transform.position, _boxCollider.size.y / 4, Vector3.down, out _, 1, 1 << LayerMask.NameToLayer("Player"));
@@ -13,9 +19,23 @@ namespace Objects.Blocks
         {
             Debug.Log("Question Block hit!");
             _animator.Play("block_hit");
-            _isHit = false;
+            float counter = 0;
+            float time = GetAnimationTime();
 
-            yield return null;
+            while (counter < time)
+            {
+                counter += Time.deltaTime;
+                yield return null;
+            }
+            
+            _objectTransformer.TransformToObject();
+            
+            _isHit = false;
+        }
+
+        private float GetAnimationTime()
+        {
+            return _animator.GetCurrentAnimatorClipInfo(0).Length;
         }
     }
 }
