@@ -14,6 +14,9 @@ namespace Objects.Blocks
         {
             Debug.Log("Used Block hit!");
             _animator.Play("block_hit");
+
+            yield return _animUtils.WaitForAnimationToFinish();
+            
             _isHit = false;
 
             yield return null;
