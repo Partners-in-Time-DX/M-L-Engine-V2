@@ -19,23 +19,13 @@ namespace Objects.Blocks
         {
             Debug.Log("Question Block hit!");
             _animator.Play("block_hit");
-            float counter = 0;
-            float time = GetAnimationTime();
 
-            while (counter < time)
-            {
-                counter += Time.deltaTime;
-                yield return null;
-            }
+            // Wait for block hit animation to finish before transforming into the used block
+            yield return _animUtils.WaitForAnimationToFinish();
             
             _objectTransformer.TransformToObject();
             
             _isHit = false;
-        }
-
-        private float GetAnimationTime()
-        {
-            return _animator.GetCurrentAnimatorStateInfo(0).length;
         }
     }
 }

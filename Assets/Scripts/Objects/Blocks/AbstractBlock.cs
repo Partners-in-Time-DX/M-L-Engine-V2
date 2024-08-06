@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Animation.Utilities;
 using UnityEngine;
 
 namespace Objects.Blocks
@@ -10,6 +11,7 @@ namespace Objects.Blocks
         
         protected Animator _animator;
         protected BoxCollider _boxCollider;
+        protected AnimUtils _animUtils;
 
         protected abstract bool CheckHit();
         protected abstract IEnumerator OnHit();
@@ -19,6 +21,7 @@ namespace Objects.Blocks
             _isHit = false;
             _animator = GetComponent<Animator>();
             _boxCollider = GetComponent<BoxCollider>();
+            _animUtils = new AnimUtils(_animator);
         }
 
         private void FixedUpdate()
