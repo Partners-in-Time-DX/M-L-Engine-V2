@@ -15,9 +15,9 @@ namespace Objects.Blocks
         }
         protected override bool CheckHit()
         {
-            if (Physics.SphereCast(transform.position, _boxCollider.size.y / 4, Vector3.down, out RaycastHit hit, 1, 1 << LayerMask.NameToLayer("Player")))
+            if (BlockRayCast())
             {
-                _playerHitTag = BlockHelper.GetPlayerTagFromBlockHit(hit);
+                _playerHitTag = BlockHelper.GetPlayerTagFromBlockHit(_hit);
 
                 return true;
             }

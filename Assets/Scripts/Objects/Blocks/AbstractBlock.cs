@@ -8,6 +8,7 @@ namespace Objects.Blocks
     public abstract class AbstractBlock : MonoBehaviour
     {
         protected bool _isHit;
+        protected RaycastHit _hit;
         
         protected Animator _animator;
         protected BoxCollider _boxCollider;
@@ -35,6 +36,15 @@ namespace Objects.Blocks
                 StartCoroutine(OnHit());
                 Debug.Log("Finished OnHit");
             }
+        }
+
+        protected bool BlockRayCast()
+        {
+            return Physics.SphereCast(transform.position, 
+                _boxCollider.size.y / 4, 
+                Vector3.down, out _hit, 
+                1, 
+                1 << LayerMask.NameToLayer("Player"));
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Objects.Blocks
         }
         protected override bool CheckHit()
         {
-            return Physics.SphereCast(transform.position, _boxCollider.size.y / 4, Vector3.down, out _, 1, 1 << LayerMask.NameToLayer("Player"));
+            return BlockRayCast();
         }
         protected override IEnumerator OnHit()
         {
