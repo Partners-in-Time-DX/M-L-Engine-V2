@@ -2,6 +2,8 @@ using System.Collections;
 using Objects.Blocks.Helpers;
 using UnityEngine;
 
+using static Objects.Blocks.Helpers.BlockHelper;
+
 namespace Objects.Blocks
 {
     public class MarioBlock : AbstractBlock
@@ -17,7 +19,7 @@ namespace Objects.Blocks
         {
             if (BlockRayCastPlayerHitCheck())
             {
-                _playerHitMario = BlockHelper.CheckPlayerTagFromBlockHit(_hit, "Mario");
+                _playerHitMario = CheckPlayerTagFromBlockHit(_hit, "Mario");
 
                 return true;
             }
