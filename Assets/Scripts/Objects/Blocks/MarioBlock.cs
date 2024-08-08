@@ -15,7 +15,7 @@ namespace Objects.Blocks
         }
         protected override bool CheckHit()
         {
-            if (BlockRayCast())
+            if (BlockRayCastPlayerHitCheck())
             {
                 _playerHitMario = BlockHelper.CheckPlayerTagFromBlockHit(_hit, "Mario");
 

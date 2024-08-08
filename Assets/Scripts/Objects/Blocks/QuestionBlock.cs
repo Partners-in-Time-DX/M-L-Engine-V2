@@ -13,7 +13,7 @@ namespace Objects.Blocks
         }
         protected override bool CheckHit()
         {
-            return BlockRayCast();
+            return BlockRayCastPlayerHitCheck();
         }
         protected override IEnumerator OnHit()
         {

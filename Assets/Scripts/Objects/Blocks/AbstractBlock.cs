@@ -38,7 +38,7 @@ namespace Objects.Blocks
             }
         }
 
-        protected bool BlockRayCast()
+        protected bool BlockRayCastPlayerHitCheck()
         {
             return Physics.SphereCast(transform.position, 
                 _boxCollider.size.y / 4, 
