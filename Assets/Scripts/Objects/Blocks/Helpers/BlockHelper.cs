@@ -4,9 +4,13 @@ namespace Objects.Blocks.Helpers
 {
     public static class BlockHelper
     {
-        public static string GetPlayerTagFromBlockHit(RaycastHit hit)
+        public static bool CheckPlayerTagFromBlockHit(RaycastHit hit, string playerTag)
         {
-            return hit.transform.gameObject.tag;
+            if (hit.transform.gameObject.CompareTag(playerTag))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

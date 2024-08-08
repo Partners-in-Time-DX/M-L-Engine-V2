@@ -7,7 +7,7 @@ namespace Objects.Blocks
     public class MarioBlock : AbstractBlock
     {
         private ObjectTransformer _objectTransformer;
-        private string _playerHitTag;
+        private bool _playerHitMario;
 
         private void Awake()
         {
@@ -17,7 +17,7 @@ namespace Objects.Blocks
         {
             if (BlockRayCast())
             {
-                _playerHitTag = BlockHelper.GetPlayerTagFromBlockHit(_hit);
+                _playerHitMario = BlockHelper.CheckPlayerTagFromBlockHit(_hit, "Mario");
 
                 return true;
             }
@@ -33,7 +33,7 @@ namespace Objects.Blocks
             // Wait for block hit animation to finish before transforming into the used block
             yield return _animUtils.WaitForAnimationToFinish();
 
-            if (_playerHitTag == "Mario")
+            if (_playerHitMario)
             {
                 _objectTransformer.TransformToObject();   
             }
