@@ -10,7 +10,7 @@ namespace Objects
 
         private void Start()
         {
-            if (String.IsNullOrEmpty(_layer))
+            if (string.IsNullOrEmpty(_layer))
             {
                 _layer = "Default";
             }
