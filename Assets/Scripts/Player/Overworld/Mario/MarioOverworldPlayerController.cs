@@ -127,6 +127,7 @@ public class MarioOverworldPlayerController : CustomBillboard
     }
     
     private bool CheckGrounded(){
+        Debug.DrawRay(transform.position, Vector3.down, Color.green);
         return Physics.Raycast(transform.position, Vector3.down, 0.1f, 1 << LayerMask.NameToLayer("Ground"));
     } 
 
