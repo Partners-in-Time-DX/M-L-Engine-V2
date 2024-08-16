@@ -6,7 +6,15 @@ namespace Objects
     public class ObjectTransformer : MonoBehaviour
     {
         [SerializeField] private GameObject _newObject;
-        [SerializeField] private LayerMask _layer;
+        [SerializeField] private string _layer;
+
+        private void Start()
+        {
+            if (string.IsNullOrEmpty(_layer))
+            {
+                _layer = "Default";
+            }
+        }
 
         public void TransformToObject()
         {
@@ -16,7 +24,7 @@ namespace Objects
             
             Destroy(gameObject);
 
-            _newObject.layer = _layer;
+            _newObject.layer = LayerMask.NameToLayer(_layer);
             Instantiate(_newObject, currentPosition, currentRotation);
         }
     }
