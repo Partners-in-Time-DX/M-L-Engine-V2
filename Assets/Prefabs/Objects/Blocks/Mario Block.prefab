@@ -154,3 +154,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _newObject: {fileID: 6360077873314417125, guid: 8898231e008787545b6d0c24690b78ab, type: 3}
+  _layer: Block
