@@ -3392,6 +3392,10 @@ PrefabInstance:
       propertyPath: _layer
       value: Block
       objectReference: {fileID: 0}
+    - target: {fileID: 6202551364451741853, guid: 2264f8452fcee0544a89a6901cc595f5, type: 3}
+      propertyPath: _layer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3416,6 +3420,10 @@ PrefabInstance:
     - target: {fileID: 3322907289630989913, guid: 2312dc691850be841b56d0429ce46432, type: 3}
       propertyPath: _layer
       value: Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 3322907289630989913, guid: 2312dc691850be841b56d0429ce46432, type: 3}
+      propertyPath: _layer.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 3457449258451596560, guid: 2312dc691850be841b56d0429ce46432, type: 3}
       propertyPath: m_LocalPosition.x
