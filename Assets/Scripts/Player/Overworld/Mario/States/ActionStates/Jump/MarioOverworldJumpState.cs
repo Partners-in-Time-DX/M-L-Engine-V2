@@ -23,6 +23,11 @@ namespace Player.Overworld.Mario.States.ActionStates.Jump
         {
             Debug.Log("Player Head Hit: " + _isHeadHit);
             _isHeadHit = CheckPlayerHeadHit();
+
+            if (_isHeadHit)
+            {
+                _ctx.Velocity = 0f;
+            }
             
             _ctx.CurrentAction.HandleAction();
             if (_ctx.CharacterMove.magnitude > 0.1f)
@@ -41,11 +46,6 @@ namespace Player.Overworld.Mario.States.ActionStates.Jump
         public override void TransitionToState()
         {
             if (_ctx.Velocity <= 0f)
-            {
-                SwitchStates(_factory.Falling());
-            }
-
-            if (_isHeadHit)
             {
                 SwitchStates(_factory.Falling());
             }
