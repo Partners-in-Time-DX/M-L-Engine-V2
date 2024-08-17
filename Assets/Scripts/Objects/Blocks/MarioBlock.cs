@@ -28,7 +28,7 @@ namespace Objects.Blocks
 
         protected override IEnumerator OnHit()
         {
-            Debug.Log("Question Block hit!");
+            Debug.Log("Mario Block hit!");
             _animator.Play("block_hit");
 
             // Wait for block hit animation to finish before transforming into the used block
