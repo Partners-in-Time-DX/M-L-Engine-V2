@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
 
         Dictionary<string, ArrayList> musicDict = new Dictionary<string, ArrayList>();
         
-        TextAsset tsvHandler = Addressables.LoadAssetAsync<TextAsset>("Assets/Audio/Sound Data.tsv").WaitForCompletion();
+        TextAsset tsvHandler = Addressables.LoadAssetAsync<TextAsset>("Assets/Audio/Sound Data.csv").WaitForCompletion();
 
         if (tsvHandler == null)
         {

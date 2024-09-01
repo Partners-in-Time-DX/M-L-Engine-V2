@@ -38,7 +38,7 @@ public class MusicManager : MonoBehaviour
     
     public void LoadSongs() {
         Dictionary<string, ArrayList> musicDict = new Dictionary<string, ArrayList>();
-        TextAsset csvHandler = Addressables.LoadAssetAsync<TextAsset>("Assets/Audio/Music Data.tsv").WaitForCompletion();
+        TextAsset csvHandler = Addressables.LoadAssetAsync<TextAsset>("Assets/Audio/Music Data.csv").WaitForCompletion();
 
         if (csvHandler == null)
         {
