@@ -126,12 +126,14 @@ public class MarioOverworldPlayerController : CustomBillboard
         _cMoveVector = _move.ReadValue<Vector2>();
     }
     
-    private bool CheckGrounded()
-    {
-        return Physics.Raycast(
+    private bool CheckGrounded(){
+        //return Physics.Raycast(transform.position, Vector3.down, 0.1f, 1 << LayerMask.NameToLayer("Ground"));
+        return Physics.SphereCast(
             transform.position, 
+            _controller.radius / 2, 
             Vector3.down, 
-            0.1f, 
+            out _, 
+            0.1f,
             1 << LayerMask.NameToLayer("Ground"));
     } 
 
