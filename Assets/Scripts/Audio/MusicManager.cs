@@ -69,7 +69,7 @@ public class MusicManager : MonoBehaviour
 
             if (music.redirect == null)
             {
-                String path = "Assets/Music/" + music.fileName + ".wav";
+                String path = "Assets/Audio/Music/" + music.fileName + ".mp3";
 
                 AudioClip clipHandler = Addressables.LoadAssetAsync<AudioClip>(path).WaitForCompletion();
 
