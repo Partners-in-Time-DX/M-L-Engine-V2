@@ -43,7 +43,7 @@ public class SoundManager : MonoBehaviour
             return;
         }
         
-        musicDict = Globals.LoadCSV(tsvHandler);
+        musicDict = CsvUtils.LoadCSV(tsvHandler);
 
         sounds = new List<Sound>();
 

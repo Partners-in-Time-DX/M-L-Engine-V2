@@ -46,7 +46,7 @@ public class MusicManager : MonoBehaviour
             return;
         }
         
-        musicDict = Globals.LoadCSV(csvHandler);
+        musicDict = CsvUtils.LoadCSV(csvHandler);
 
         allMusic = new List<Music>();
 
