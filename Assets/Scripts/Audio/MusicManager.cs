@@ -50,46 +50,53 @@ public class MusicManager : MonoBehaviour
 
         allMusic = new List<Music>();
 
+        int i = 0;
         foreach(KeyValuePair<string, ArrayList> entry in musicDict) {
             if (entry.Key == "" || entry.Key[0] == '#' || (string) entry.Value[1] == "Intro Point") continue;
-            Music music = new Music();
+            if (i != 0)
+            {
+                Music music = new Music();
                 
-            music.fileName = entry.Key;
-            music.songName = Convert.ToString(entry.Value[0]);
+                music.fileName = entry.Key;
+                music.songName = Convert.ToString(entry.Value[0]);
+                music.fileType = Convert.ToString(entry.Value[1]);
             
-            try
-            {
-                music.loopStart = Convert.ToSingle(entry.Value[1]);
-                music.loopEnd = Convert.ToSingle(entry.Value[2]);
-            }
-            catch
-            {
-                music.redirect = Convert.ToString(entry.Value[3]);
-            }
-
-            if (music.redirect == null)
-            {
-                String path = "Assets/Audio/Music/" + music.fileName + ".mp3";
-
-                AudioClip clipHandler = Addressables.LoadAssetAsync<AudioClip>(path).WaitForCompletion();
-
-                if (clipHandler != null)
+                try
                 {
-                    music.source = gameObject.AddComponent<AudioSource>();
-                    music.source.clip = clipHandler;
-                    music.source.pitch = music.pitch;
-                    music.source.loop = true;
-                    music.source.outputAudioMixerGroup = group;
+                    music.loopStart = Convert.ToSingle(entry.Value[2]);
+                    music.loopEnd = Convert.ToSingle(entry.Value[3]);
                 }
-                else
+                catch
                 {
-                    Debug.LogError("Failed to load song: " + music.fileName);
+                    music.redirect = Convert.ToString(entry.Value[4]);
                 }
-            }
+
+                if (music.redirect == null)
+                {
+                    String path = "Assets/Audio/Music/" + music.fileName + music.fileType;
+
+                    AudioClip clipHandler = Addressables.LoadAssetAsync<AudioClip>(path).WaitForCompletion();
+
+                    if (clipHandler != null)
+                    {
+                        music.source = gameObject.AddComponent<AudioSource>();
+                        music.source.clip = clipHandler;
+                        music.source.pitch = music.pitch;
+                        music.source.loop = true;
+                        music.source.outputAudioMixerGroup = group;
+                    }
+                    else
+                    {
+                        Debug.LogError("Failed to load song: " + music.fileName);
+                    }
+                }
             
-            allMusic.Add(music);
+                allMusic.Add(music);
+            }
+
+            i++;
         }
-
+        
         DoneLoading = true;
     }
 

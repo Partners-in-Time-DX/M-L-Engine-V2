@@ -53,8 +53,9 @@ public class SoundManager : MonoBehaviour
                 Sound sound = new Sound();
                 
                 sound.name = entry.Key;
+                sound.fileType = Convert.ToString(entry.Value[0]);
 
-                String path = "Assets/Audio/Sound/" + sound.name + ".wav";
+                String path = "Assets/Audio/Sound/" + sound.name + sound.fileType;
                 
                 AudioClip clipHandler = Addressables.LoadAssetAsync<AudioClip>(path).WaitForCompletion();
 
@@ -63,7 +64,7 @@ public class SoundManager : MonoBehaviour
                     sound.source = gameObject.AddComponent<AudioSource>();
                     sound.source.clip = clipHandler;
                     sound.source.pitch = sound.pitch;
-                    sound.source.loop = Convert.ToBoolean(entry.Value[0]);
+                    sound.source.loop = Convert.ToBoolean(entry.Value[1]);
                     sound.source.outputAudioMixerGroup = group;
                 }
 

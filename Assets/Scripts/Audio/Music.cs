@@ -7,6 +7,7 @@ public class Music {
     
     public string songName;
     public string fileName;
+    public string fileType;
     
     public float volume = 1;
     public float pitch = 1;

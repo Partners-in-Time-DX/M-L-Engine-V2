@@ -1,4 +1,4 @@
-Sound Name,Loop,loopStart,loopEnd
-jump,false
-walk_grass,false
-smb_coin,false
+Sound Name,File Type,Loop,loopStart,loopEnd
+jump,.wav,false,,
+walk_grass,.wav,false,,
+smb_coin,.wav,false,,
