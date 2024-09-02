@@ -114,6 +114,7 @@ public class MusicManager : MonoBehaviour
     }
 
     [Button]
+    [EnableIf("CheckMusicListNotEmpty")]
     public Music PlayRandom()
     {
         System.Random rand = new System.Random();
@@ -121,6 +122,11 @@ public class MusicManager : MonoBehaviour
         string s = allMusic.ElementAt(rand.Next(0, allMusic.Count)).fileName;
 
         return Play(s);
+    }
+
+    public bool CheckMusicListNotEmpty()
+    {
+        return allMusic?.Any() != false;
     }
 
     public Music Play(string name)
