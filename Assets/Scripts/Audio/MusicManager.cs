@@ -131,7 +131,8 @@ public class MusicManager : MonoBehaviour
         return Play(s);
     }
 
-    public bool CheckMusicListNotEmpty()
+    //Use with Play Random button
+    public bool CheckMusicListNotEmpty() 
     {
         return allMusic?.Any() != false;
     }
