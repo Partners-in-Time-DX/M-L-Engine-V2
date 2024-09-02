@@ -16,14 +16,14 @@ public static class Globals
         ArrayList list = new ArrayList();
         
         var content = file.text;
-        var lines = content.Split(System.Environment.NewLine);
+        var lines = content.Split("\n");
 
         for (int i=0; i < lines.Length; i++)
         {
             list = new ArrayList();
             var line = lines[i];
             if (string.IsNullOrEmpty(line)) continue;
-            string[] values = line.Split('	');
+            string[] values = line.Split(',');
             for (int j=1; j < values.Length; j++) {
                 list.Add(values[j]);
             }
