@@ -1,0 +1,4 @@
+Sound Name,File Type,Loop,loopStart,loopEnd
+jump,.wav,false,,
+walk_grass,.wav,false,,
+smb_coin,.wav,false,,
