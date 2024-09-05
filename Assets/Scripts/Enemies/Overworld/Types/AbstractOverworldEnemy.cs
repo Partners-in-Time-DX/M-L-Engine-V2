@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 namespace Enemies.Overworld.Types
 {
-    public class AbstractOverworldEnemy : CustomBillboard
+    public abstract class AbstractOverworldEnemy : CustomBillboard
     {
         // States
         private EnemyOverworldBaseState _currentState;
