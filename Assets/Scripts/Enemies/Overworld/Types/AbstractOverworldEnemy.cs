@@ -26,8 +26,13 @@ namespace Enemies.Overworld.Types
         // Navmesh
         private NavMeshAgent _agent;
         
+        // Player Detection
+        private bool _playerDetected;
+        
+        // Public Getters and Setters
         public EnemyOverworldBaseState CurrentState { get => _currentState; set => _currentState = value; }
         public Vector3 OriginalPosition { get => _originalPosition; set => _originalPosition = value; }
+        public bool PlayerDetected { get => _playerDetected; set => _playerDetected = value; }
 
         private void Start()
         {
