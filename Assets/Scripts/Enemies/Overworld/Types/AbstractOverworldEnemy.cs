@@ -7,6 +7,15 @@ namespace Enemies.Overworld.Types
 {
     public abstract class AbstractOverworldEnemy : CustomBillboard
     {
+        // Serializable Fields
+        [field: SerializeField] protected string _enemyName;
+        [field: SerializeField] protected bool _canStomp;
+        [field: SerializeField] protected bool _canHammer;
+        [field: SerializeField] protected float _speed = 5;
+        
+        // Sprite
+        [field: SerializeField] protected GameObject _child;
+        
         // States
         private EnemyOverworldBaseState _currentState;
         private EnemyOverworldStateFactory _stateFactory;
@@ -17,16 +26,13 @@ namespace Enemies.Overworld.Types
         // Navmesh
         private NavMeshAgent _agent;
         
-        public string enemyName;
-        public bool canStomp;
-        public bool canHammer;
-        public float speed = 5;
-        
         public EnemyOverworldBaseState CurrentState { get => _currentState; set => _currentState = value; }
         public Vector3 OriginalPosition { get => _originalPosition; set => _originalPosition = value; }
 
         private void Start()
         {
+            Init(_child); // Setup Billboard
+            
             //Setup default state
             _stateFactory = new EnemyOverworldStateFactory(this);
             _currentState = _stateFactory.Idle(); // Default should be idle
